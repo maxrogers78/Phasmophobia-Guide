@@ -3,41 +3,41 @@
 ### Index
 
 - [Phasmophobia Guide](#phasmophobia-guide)
-  - [Index](#index)
+    - [Index](#index)
 - [Posesiones Malditas](#posesiones-malditas)
-  - [Monkey Paw](#monkey-paw)
-  - [Music Box](#music-box)
-  - [Summoning Circle](#summoning-circle)
-  - [Ouija Board](#ouija-board)
-  - [Voodoo Doll](#voodoo-doll)
-  - [Haunted Mirror](#haunted-mirror)
-  - [Tarot Cards](#tarot-cards)
+    - [Monkey Paw](#monkey-paw)
+    - [Music Box](#music-box)
+    - [Summoning Circle](#summoning-circle)
+    - [Ouija Board](#ouija-board)
+    - [Voodoo Doll](#voodoo-doll)
+    - [Haunted Mirror](#haunted-mirror)
+    - [Tarot Cards](#tarot-cards)
 - [Comportamientos de Ghosts](#comportamientos-de-ghosts)
 - [Ghosts](#ghosts)
-  - [Spirit](#spirit)
-  - [Wraith](#wraith)
-  - [Phantom](#phantom)
-  - [Poltergeist](#poltergeist)
-  - [Banshee](#banshee)
-  - [Jinn](#jinn)
-  - [Mare](#mare)
-  - [Revenant](#revenant)
-  - [Shade](#shade)
-  - [Demon](#demon)
-  - [Yurei](#yurei)
-  - [Oni](#oni)
-  - [Yokai](#yokai)
-  - [Hantu](#hantu)
-  - [Goryo](#goryo)
-  - [Myling](#myling)
-  - [Onryo](#onryo)
-  - [The Twins](#the-twins)
-  - [Raiju](#raiju)
-  - [Obake](#obake)
-  - [The Mimic](#the-mimic)
-  - [Moroi](#moroi)
-  - [Deogen](#deogen)
-  - [Thaye](#thaye)
+    - [Spirit](#spirit)
+    - [Wraith](#wraith)
+    - [Phantom](#phantom)
+    - [Poltergeist](#poltergeist)
+    - [Banshee](#banshee)
+    - [Jinn](#jinn)
+    - [Mare](#mare)
+    - [Revenant](#revenant)
+    - [Shade](#shade)
+    - [Demon](#demon)
+    - [Yurei](#yurei)
+    - [Oni](#oni)
+    - [Yokai](#yokai)
+    - [Hantu](#hantu)
+    - [Goryo](#goryo)
+    - [Myling](#myling)
+    - [Onryo](#onryo)
+    - [The Twins](#the-twins)
+    - [Raiju](#raiju)
+    - [Obake](#obake)
+    - [The Mimic](#the-mimic)
+    - [Moroi](#moroi)
+    - [Deogen](#deogen)
+    - [Thaye](#thaye)
 
 # Posesiones Malditas
 
@@ -45,52 +45,121 @@ Todas las posesiones malditas, de una u otra manera, pueden iniciar una `cursed 
 
 - Ignora cordura
 - Ignora cooldown entre hunts
-- Ignora crucifijos
-- Ignora velas (Onryo)
+- Ignora crucifijos (excepto Tier 3)
+- Ignora velas (solo para Onryo)
 
 ### Monkey Paw
 
-Otorga deseos al player, tantos positivos como negativos
+- Otorga deseos al player, tantos positivos como negativos
+- La cantidad de deseos depende de la dificultad:
+  - 0x - 1.99x: 5 deseos
+  - 2x - 2.99x: 4 deseos
+  - 3x+: 2 deseos
 
-La cantidad de deseos depende de la dificultad
+Lista de deseos:
 
-POR RELLENAR
+- Ghost:
+  - I wish to see the ghost:
+    - Forza un ghost event en la ubicación actual del ghost
+    - Afecta al player con visibilidad reducida
+    - Luego de `5 segundos` del inicio del ghost event, inicia una cursed hunt
+    - Al terminar la cursed hunt, la visilibilidad del player volverá a la normalidad
+  - I wish for activity / I wish the ghost would do something:
+    - Duplica la actividad del ghost por `2 minutos`
+    - Los fusibles se romperán permanentemente
+    - La puerta de salida se bloqueará por `2 minutos`
+  - I wish to trap the ghost / I wish the ghost was trapped:
+    - Teletransporta al ghost a la ghost room
+    - Lo encierra allí por `1 minuto`
+    - Durante ese tiempo, el ghost no puede realizar ningún tipo de interacción, hunt, event, etc
+    - Se bloquearán todas las puertas de la habitación del player
+    - Al terminar el tiempo, se desbloquearán las puertas y se iniciará una ghost hunt
+- Player:
+  - I wish to be sane / I wish for sanity:
+    - Asigna la cordura de todos los player al `50%`
+    - El consumo pasivo de cordura se multiplica por `1.5` por el resto de la partida
+    - Cambia la ghost room a una habitación aleatoria
+  - I wish to be safe:
+    - Abre el escondite más cercano del player
+    - Las luces de la habitación donde se encuentra el player empezarán a parpadear
+    - Por el resto de la partida, el ghost podrá escuchar al player y sentir los aparatos electrónicos que lleve a cualquier distancia
+  - I wish to leave:
+    - Desbloquea todas las puertas bloqueadas, incluso durante una hunt
+    - La velocidad de movimiento del player será reducida, volverá a la normalidad de forma gradual luego de `5 segundos`
+    - Reduce su visibilidad durante `5 segundos`
+- Otro:
+  - I wish to revive my friend / I wish for life:
+    - Revive a un player muerto
+    - El player que realizó el deseo tiene un `50%` de probabilidad de morir
+  - I wish for knowledge:
+    - Elimina 1 evidencia incorrecta y sus correspondientes ghost del Diario
+    - Iniciará una hunt cerca del player
+    - El player tendrá visibilidad y audición reducida
+  - I wish for `weather` (sun, rain, clear sky, fog, snow, wind):
+    - Cambia el clima al solicitado
+    - Causa cegera temporal mientras el clima cambia
+    - Drena `25%` de cordura al player
+    - Al desear `rain`, puede tocar `light rain` o `heavy rain`
+  - I wish for anything:
+    - Selecciona un deseo (no utilizado) aleatorio
 
 ### Music Box
 
-Obliga al ghost a cantar, revelando su ubicación
-
-POR RELLENAR
+- Obliga al ghost a cantar en un radio de `20 metros`
+- Si el ghost se encuentra a un radio de `5 metros` de la Music Box, realizará un ghost event y caminará hacia la ella
+- Se recomienda dejar la Music Box en el suelo (por defecto tecla F), de lo contrario, iniciará una cursed hunt
+- No puede ser utilizada durante una hunt
+- Iniciará una hunt si la cordura del player llega a `0`
 
 ### Summoning Circle
 
-Invoca y atrapa al ghost en la ubicación (por muy poco tiempo), luego inicia una cursed hunt
+- Para activarse, se deben encender sus `5 velas`
+- Encender cada vela drena la cordura en un `16%`, necesitando un mínimo de `80%` de cordura para encender las 5 (al menos para un player)
+- Al igual que las velas normales, el ghost puede apagarlas
+- Al encender las 5 velas, sucederá lo siguiente:
+  - Invocará al ghost dentro del círculo
+  - No podrá atacar por `5 segundos`, las excepciones a esto son:
+    - Si el player que encendió la última vela tiene menos de `16%` de cordura
+    - Si la última vela es encendida durante una hunt (agrega `20 segundos` a la hunt en proceso)
+  - Al terminar el tiempo, iniciará una cursed hunt
 
 ### Ouija Board
 
-Otorga la habilidad de comunicarse con el ghost a costo de cordura
-
-POR RELLENAR
+- Responde a preguntas en un radio de `5 metros`
+- Al responder, dejará una lectura `EMF 2` (si el ghost tiene Lectura EMF como evidencia, tendrá un `25%` de probabilidad de marcar `EMF 5`)
+- Para desactivarla, el player debe despedirse (decir Goodbye), de lo contrario, iniciará una cursed hunt
+- Se romperá si:
+  - No hay al menos 1 player en un rango de `5 metros` estando activada
+  - El player que realiza una pregunta no tiene la cantidad suficiente de cordura para "pagar" por ella
+  - El player que dijo "Goddbye" tiene `0` de cordura
+  - La frase "Hide and Seek" es dicha
+- Al romperse, iniciará una cursed hunt
 
 ### Voodoo Doll
 
-Contiene 10 pins alrededor del cuerpo, los cuales 9 de ellos forzan una interacción
-
-El pin restante se ubica en el corazón, al activarse inicia una cursed hunt
-
-Activar un pin normal drena por `5%` la cordura, mientras que utilizar el del corazón la drena por `10%`
+- Contiene `10 pins` alrededor de su cuerpo
+- Interactuar con ella hará que baje un pin aleatorio
+- Al bajar un pin que no sea el corazón, causará que:
+  - La cordura del player baje en un `5%`
+  - Causa una interacción
+- Al bajar el pin del corazón, causará que:
+  - La cordura del player baje en un `10%`
+  - Inicia una cursed hunt
+- Si el player no tiene suficiente cordura para "pagar", se activarán todos los pins e iniciará una cursed hunt
 
 ### Haunted Mirror
 
-Revela la ubicación de la ghost room a costo de cordura
-
-Si la cordura del player llega a 0, el espejo se rompe e inicia una cursed hunt
+- Al activarse, revela la ghost room
+- Utilizarlo drena la cordura del player a una tasa del `7.5%/s` o `20%` por uso (prioriza el mayor valor)
+- Si el player tiene su cordura en `0`, causará que:
+  - El espejo se rompa
+  - Inicia una cursed hunt
 
 ### Tarot Cards
 
 Contiene 10 cartas generadas de forma aleatoria, las cuales son:
 
-- The Tower (20%):
+- The Tower (20%, actualmente buggeada):
   - Forza una interacción
   - Duplica actividad fantasma por `20 segundos`
 - The Wheel of Fortune (20%):
@@ -153,6 +222,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 ### Poltergeist
 
 - Puede hacer una "explosión" de items (baja mucho la cordura)
+- Lanza objetos con mayor fuerza de lo normal
 - Durante una hunt, lanzará items cerca suyo cada `0.5 segundos`
 
 ### Banshee
@@ -191,8 +261,8 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Demon
 
-- Puede iniciar una hunt con promedio de cordura bajo el `75%`, pero tiene una probabilidad baja de atacar a valor
-- Puede iniciar una hunt cada `20 segundos`
+- Puede iniciar una hunt con promedio de cordura bajo el `75%`, pero tiene una probabilidad baja de atacar a cualquier valor
+- Su delay entre hunts es de `20 segundos`
 - El radio de uso del crucifijo aumenta en un `50%`
 - Utilizar un incienso en la ghost room lo dejará sin poder iniciar una hunt por solo `60 segundos`
 
