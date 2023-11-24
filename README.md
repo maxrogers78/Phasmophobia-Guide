@@ -3,41 +3,83 @@
 ### Index
 
 - [Phasmophobia Guide](#phasmophobia-guide)
-    - [Index](#index)
+  - [Index](#index)
+- [Equipamiento Recomendado](#equipamiento-recomendado)
+  - [Inicial](#inicial)
+  - [Opcional](#opcional)
 - [Posesiones Malditas](#posesiones-malditas)
-    - [Monkey Paw](#monkey-paw)
-    - [Music Box](#music-box)
-    - [Summoning Circle](#summoning-circle)
-    - [Ouija Board](#ouija-board)
-    - [Voodoo Doll](#voodoo-doll)
-    - [Haunted Mirror](#haunted-mirror)
-    - [Tarot Cards](#tarot-cards)
+  - [Monkey Paw](#monkey-paw)
+  - [Music Box](#music-box)
+  - [Summoning Circle](#summoning-circle)
+  - [Ouija Board](#ouija-board)
+  - [Voodoo Doll](#voodoo-doll)
+  - [Haunted Mirror](#haunted-mirror)
+  - [Tarot Cards](#tarot-cards)
 - [Comportamientos de Ghosts](#comportamientos-de-ghosts)
 - [Ghosts](#ghosts)
-    - [Spirit](#spirit)
-    - [Wraith](#wraith)
-    - [Phantom](#phantom)
-    - [Poltergeist](#poltergeist)
-    - [Banshee](#banshee)
-    - [Jinn](#jinn)
-    - [Mare](#mare)
-    - [Revenant](#revenant)
-    - [Shade](#shade)
-    - [Demon](#demon)
-    - [Yurei](#yurei)
-    - [Oni](#oni)
-    - [Yokai](#yokai)
-    - [Hantu](#hantu)
-    - [Goryo](#goryo)
-    - [Myling](#myling)
-    - [Onryo](#onryo)
-    - [The Twins](#the-twins)
-    - [Raiju](#raiju)
-    - [Obake](#obake)
-    - [The Mimic](#the-mimic)
-    - [Moroi](#moroi)
-    - [Deogen](#deogen)
-    - [Thaye](#thaye)
+  - [Spirit](#spirit)
+  - [Wraith](#wraith)
+  - [Phantom](#phantom)
+  - [Poltergeist](#poltergeist)
+  - [Banshee](#banshee)
+  - [Jinn](#jinn)
+  - [Mare](#mare)
+  - [Revenant](#revenant)
+  - [Shade](#shade)
+  - [Demon](#demon)
+  - [Yurei](#yurei)
+  - [Oni](#oni)
+  - [Yokai](#yokai)
+  - [Hantu](#hantu)
+  - [Goryo](#goryo)
+  - [Myling](#myling)
+  - [Onryo](#onryo)
+  - [The Twins](#the-twins)
+  - [Raiju](#raiju)
+  - [Obake](#obake)
+  - [The Mimic](#the-mimic)
+  - [Moroi](#moroi)
+  - [Deogen](#deogen)
+  - [Thaye](#thaye)
+
+---
+
+# Equipamiento Recomendado
+
+### Inicial
+
+- D.O.T.S:
+  - II: habitaciones pequeñas/medianas
+  - III: habitaciones grandes
+- EMF Reader: III
+- Ghost Writing Book: III
+- Spirit Box: III
+- Thermometer: I
+- UV Light:
+  - I: pisadas, puertas, interruptores
+  - III: ventanas
+- Video Camera: III
+- Flashlight: III
+
+### Opcional
+
+- Cruficijo: III
+- Firelight: III
+- Headgear: III
+- Igniter: III
+- Inciense:
+  - I: despistar
+  - II: despistar, ralentizar
+  - III: stunear
+- Motion Sensor: III
+- Parabolic Microphone: III
+- Photo Camera: III
+- Salt:
+  - II: rango
+  - III: rango, ralentizar y evitar que se aleje
+- Sanity Medication: III
+- Sound Sensor: III
+- Tripod: III
 
 # Posesiones Malditas
 
@@ -117,7 +159,7 @@ Lista de deseos:
 - Encender cada vela drena la cordura en un `16%`, necesitando un mínimo de `80%` de cordura para encender las 5 (al menos para un player)
 - Al igual que las velas normales, el ghost puede apagarlas
 - Al encender las 5 velas, sucederá lo siguiente:
-  - Invocará al ghost dentro del círculo
+  - Invocará al ghost dentro del círculo (se verá como una sombra transparente si es un Shade)
   - No podrá atacar por `5 segundos`, las excepciones a esto son:
     - Si el player que encendió la última vela tiene menos de `16%` de cordura
     - Si la última vela es encendida durante una hunt (agrega `20 segundos` a la hunt en proceso)
@@ -145,7 +187,7 @@ Lista de deseos:
 - Al bajar el pin del corazón, causará que:
   - La cordura del player baje en un `10%`
   - Inicia una cursed hunt
-- Si el player no tiene suficiente cordura para "pagar", se activarán todos los pins e iniciará una cursed hunt
+- Si el player se queda sin cordura, se activarán todos los pins e iniciará una cursed hunt
 
 ### Haunted Mirror
 
@@ -159,29 +201,29 @@ Lista de deseos:
 
 Contiene 10 cartas generadas de forma aleatoria, las cuales son:
 
-- The Tower (20%, actualmente buggeada):
+- The Tower (`20%`, actualmente buggeada, no hace nada):
   - Forza una interacción
   - Duplica actividad fantasma por `20 segundos`
-- The Wheel of Fortune (20%):
+- The Wheel of Fortune (`20%`):
   - Fuego verde: `+25%` de cordura
   - Fuego rojo: `-25%` de cordura
-- The Fool (17%, 100% durante una hunt):
+- The Fool (`17%`, `100%` durante una hunt):
   - Selecciona una carta al azar, la muestra y luego se transforma en The Fool, causando que nada suceda
-- The Devil (10%):
+- The Devil (`10%`):
   - Forza un ghost event hacia el player más cerca del ghost
-- Death (10%):
+- Death (`10%`):
   - Forza una cursed hunt
-- The Hermit (10%):
+- The Hermit (`10%`):
   - Teleporta al ghost a la ghost room
   - Lo atrapa allí durante 1 minuto
-- The Sun (5%):
+- The Sun (`5%`):
   - Restaura por completo la cordura del player
-- The Moon (5%):
+- The Moon (`5%`):
   - Drena por completo la cordura del player
-- The High Priestess (2%):
+- The High Priestess (`2%`):
   - Revive a un player muerto
   - Si ningún player ha muerto, revive al siguiente en morir
-- The Hanged Man (1%):
+- The Hanged Man (`1%`):
   - Mata al player
 
 # Comportamientos de Ghosts
@@ -198,7 +240,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
   - Deogen (depende de la distancia del player)
   - Hantu (depende de la temperatura)
   - Raiju (depende de los aparatos electrónicos)
-  - Revenant (depende de si está viendo al player)
+  - Revenant (depende de detectar al player)
   - Thaye (depende de su edad)
 
 # Ghosts
@@ -230,7 +272,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 - Elige a un player "favorito", solo cazará a ese player (mientras esté en el mismo piso y dentro del edificio, de lo contrario atacará a cualquiera)
 - Iniciará hunts según la cordura del favorito
 - Si el favorito muere, escogerá a otro
-- Tiene un `30%` de probabilidad de dar su grito particular mediante el Micrófono Parabólico
+- Tiene un `30%` de probabilidad de dar un grito agudo mediante el Micrófono Parabólico
 - Su ghost event favorito es cantar
 
 ### Jinn
@@ -248,7 +290,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Revenant
 
-- En una hunt es muy lento cuando no detecta a alguien, apenas detecta a alguien avanzará SUPER rápido
+- En una hunt es muy lento cuando no detecta a alguien, apenas detecta a alguien avanzará EXTREMADAMENTE rápido
 - Durante una hunt, no aumentará su velocidad de movimiento mientras observa al player
 
 ### Shade
@@ -261,15 +303,15 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Demon
 
-- Puede iniciar una hunt con promedio de cordura bajo el `75%`, pero tiene una probabilidad baja de atacar a cualquier valor
+- Puede iniciar una hunt con promedio de cordura bajo el `75%`, pero tiene una probabilidad muy baja de atacar a cualquier valor
 - Su delay entre hunts es de `20 segundos`
 - El radio de uso del crucifijo aumenta en un `50%`
 - Utilizar un incienso en la ghost room lo dejará sin poder iniciar una hunt por solo `60 segundos`
 
 ### Yurei
 
-- Puede drenar la cordura de un player cercano en un `15%`
 - Puede cerrar una puerta completamente abierta (fuera de un evento y/o hunt)
+- Al cerrar una puerta, drena la cordura del player más cercano en un `15%`
 - Si falla en cerrar la puerta, tocará la manilla 2 veces
 - Es el único ghost que puede dejar lectura EMF en la puerta principal al cerrar una puerta
 - Utilizar un incencio en la ghost room lo dejará encerrado ahí por `60 segundos`
@@ -278,7 +320,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 - No puede manifestarse como una bola de aire
 - Se manifiesta más a menudo cuando hay varios player en la ghost room
-- Durante una hunt es muy visible (a diferencia del Phantom/Ente)
+- Durante una hunt es muy visible (a diferencia del Phantom)
 
 ### Yokai
 
@@ -288,6 +330,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 ### Hantu
 
 - Lento en temperaturas altas, rápido en temperaturas bajas
+- Siempre mostrará Temperaturas Heladas, aún cuando la configuración de la partida no permita evidencia
 - Si los fusibles están apagados, se le puede ver su respiración durante una hunt (procurar no confundir con respiración de players)
 - Durante una hunt, no aumentará su velocidad de movimiento mientras observa al player
 
@@ -295,6 +338,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 - DOTS solo pueden ser reveladas mediante una cámara de video mientras la ghost room esté vacía
 - No puede cambiar de ghost room
+- Siempre mostrará DOTS, aún cuando la configuración de la partida no permita evidencia
 
 ### Myling
 
@@ -306,7 +350,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 - No puede iniciar una hunt en un radio de `4 metros` de una vela encendida
 - Si se deja una vela encencida sobre un crucifijo, priorizará apagar la vela antes que ocupar el crucifijo
-- Al apagar por `3ra vez` una vela, comenzará una hunt ignorando el promedio de cordura
+- Al apagar por `3ra vez` una vela, comenzará una hunt ignorando el promedio de cordura (puede ser cancelada al consumir una carga de crucifijo)
 
 ### The Twins
 
@@ -325,6 +369,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 ### Obake
 
 - Tiene un `75%` de probabilidad de dejar Ultravioleta
+- Siempre mostrará Ultravioleta, aún cuando la configuración de la partida no permita evidencia
 - Al dejar evidencia Ultravioleta, tiene `16.7%` de probabilidad de:
   - Dejar evidencia de mano con `6 dedos`
   - Dejar evidencia de interruptor con `2 dedos`
@@ -333,13 +378,14 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 ### The Mimic
 
 - Escogerá a un ghost random e imitará su comportamiento
-- Siempre mostrará orbes fantasma, pero no es una de sus 3 pruebas obligatorias
+- Siempre mostrará Orbes Fantasma, aún cuando la configuración de la partida no permita evidencia ni sea una de sus 3 pruebas obligatorias
 - No puede imitar DOTS de Goryo
 - Puede cambiar de ghost cada `30 segundos - 2 minutos`, pero nunca durante una hunt
 
 ### Moroi
 
 - Su velocidad de movimiento depende del promedio de cordura, entre menor sea, más rápido será
+- Siempre mostrará Spirit Box, aún cuando la configuración de la partida no permita evidencia
 - Si responde a un player mediante la Spirit Box y/o Micrófono Parabólico lo maldecirá
 - Un player maldito tendrá las siguientes caracteristicas:
   - Su cordura bajará el doble de rápido
@@ -357,6 +403,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 - Durante una hunt, SIEMPRE sabrá en donde estás, no puedes esconderte
 - Al estar lejos del player, se moverá muy rápido
 - Al estar cerca del player, se moverá extremadamente lento
+- Siempre mostrará Spirit Box, aún cuando la configuración de la partida no permita evidencia
 - Solo puede iniciar una hunt cuando el promedio de cordura es bajo a `40%`
 - Al estar en menos de 1 metro de él utilizando la Spirit Box, dará un gruñido
 - Durante una hunt, no aumentará su velocidad de movimiento mientras observa al player
@@ -366,7 +413,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 - Es el único ghost que avanza de edad según avanza la partida
 - Envejecerá cada `1-2 minutos` si un player está cerca de él
 - Inicia joven, pudiendo iniciar una hunt con un promedio de cordura de `75%` y con velocidad de movimiento rápida
-- Estando joven, será más activo, iniciando eventos e interacciones
+- Entre más joven es, mayor cantidad de interacciones realizará
 - Cada vez que envejece, iniciará una hunt con menor frecuencia y será más lento (eliminando `0.175m/s` a su velocidad de movimiento)
 - Se puede consultar su edad actual mediante un tablejo Ouija
 - Durante una hunt, no aumentará su velocidad de movimiento mientras observa al player
