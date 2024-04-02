@@ -149,9 +149,11 @@ Lista de deseos:
 
 - Obliga al ghost a cantar en un radio de `20 metros`
 - Si el ghost se encuentra a un radio de `5 metros` de la Music Box, realizará un ghost event y caminará hacia la ella
-- Se recomienda dejar la Music Box en el suelo (por defecto tecla F), de lo contrario, iniciará una cursed hunt
-- No puede ser utilizada durante una hunt
+- Si el ghost camina durante más de `5 segundos`, iniciará una cursed hunt
+- No lanzarla al suelo, al hacerlo, la música se detendrá e iniciará una cursed hunt
+- La cantidad de cordura drenada incrementa según el tiempo que el player la sostiene (`2.5%/s` aprox)
 - Iniciará una hunt si la cordura del player llega a `0`
+- No puede ser utilizada durante una hunt
 
 ### Summoning Circle
 
@@ -236,7 +238,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
   - Termina una hunt
   - Se consume una carga del Crucifijo
 - Durante un evento y/o hunt, interfieren con aparatos electrónicos en un radio de `10 metros`
-- Durante una hunt aumenatarán su velocidad de movimiento de forma gradual mientras tengan a su presa a la vista, excepciones a esto son:
+- Durante una hunt aumenatarán su velocidad de movimiento de forma gradual mientras tengan a su presa a la vista (incluyendo Moroi), excepciones a esto son:
   - Deogen (depende de la distancia del player)
   - Hantu (depende de la temperatura)
   - Raiju (depende de los aparatos electrónicos)
@@ -247,9 +249,17 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Spirit
 
+**EMF 5 -**
+**Ghost Writing -**
+**Spirit Box**
+
 - Utilizar un incienso lo dejará sin poder iniciar una hunt durante `3 minutos`
 
 ### Wraith
+
+**EMF 5 -**
+**Spirit Box -**
+**DOTs**
 
 - No deja pisadas en la sal
 - Se puede teletransportar a un player, e iniciar una hunt en ese lugar
@@ -257,19 +267,31 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Phantom
 
+**Spirit Box -**
+**Finger Prints -**
+**DOTs**
+
 - Desaparece cuando se le toma una foto
 - Puede escoger a un player y hacer roaming alrededor de el, permitiendole cambiar de ghost room
 - Durante una hunt es poco visible (a diferencia del Oni)
 
 ### Poltergeist
 
+**Spirit Box -**
+**Finger Prints -**
+**Ghost Writing**
+
 - Puede hacer una "explosión" de items (baja mucho la cordura)
-- Lanza objetos con mayor fuerza de lo normal
+- Lanza objetos con mayor fuerza de lo normal y más seguido
 - Durante una hunt, lanzará items cerca suyo cada `0.5 segundos`
 
 ### Banshee
 
-- Elige a un player "favorito", solo cazará a ese player (mientras esté en el mismo piso y dentro del edificio, de lo contrario atacará a cualquiera)
+**Finger Prints -**
+**Orbs -**
+**DOTs**
+
+- Elige a un player "favorito", solo cazará a ese player (mientras esté en el mismo piso y dentro del edificio, de lo contrario atacará a cualquiera) ignorando a cualquier otro player
 - Iniciará hunts según la cordura del favorito
 - Si el favorito muere, escogerá a otro
 - Tiene un `30%` de probabilidad de dar un grito agudo mediante el Micrófono Parabólico
@@ -277,11 +299,19 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Jinn
 
+**Finger Prints -**
+**EMF 5 -**
+**Freezing Temperatures**
+
 - Jamás apagará los fusibles
 - Durante una hunt, avanzará muy rápidamente apenas te vea desde lejos (solo con los fusibles encendidos), una vez se acerque a ti continuará con su velocidad normal
-- Puede bajar tu cordura en un `25%` de forma random, al hacerlo, dejará SIEMPRE un valor `EMF 2` en los fusibles
+- Dejará una lectura de `EMF 2` en los fusibles al intentar apagarlos
 
 ### Mare
+
+**Spirit Box -**
+**Orbs -**
+**Ghost Writing**
 
 - Puede apagar un interruptor de luz INMEDIATAMENTE después de que el jugador lo encienda (aún cuando los fusibles están apagados)
 - Jamás podrá encender un interruptor de luz
@@ -290,10 +320,18 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Revenant
 
+**Ghost Writing -**
+**Freezing Temperatures -**
+**Ghost Orbs**
+
 - En una hunt es muy lento cuando no detecta a alguien, apenas detecta a alguien avanzará EXTREMADAMENTE rápido
 - Durante una hunt, no aumentará su velocidad de movimiento mientras observa al player
 
 ### Shade
+
+**Ghost Writing -**
+**Freezing Temperatures -**
+**EMF 5**
 
 - Es muy tímido, haciendo que reduzca la probabilidad de realizar un ghost event y/o interacción
 - No puede iniciar una hunt si al menos 1 player está en la ghost room
@@ -303,20 +341,32 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Demon
 
-- Puede iniciar una hunt con promedio de cordura bajo el `75%`, pero tiene una probabilidad muy baja de atacar a cualquier valor
+**Finger Prints -**
+**Ghost Writing -**
+**Freezing Temperatures**
+
+- Puede iniciar una hunt con promedio de cordura bajo el `100%`, pero tiene una probabilidad muy baja de atacar
 - Su delay entre hunts es de `20 segundos`
 - El radio de uso del crucifijo aumenta en un `50%`
 - Utilizar un incienso en la ghost room lo dejará sin poder iniciar una hunt por solo `60 segundos`
 
 ### Yurei
 
+**Ghost Orbs -**
+**Freezing Temperatures -**
+**DOTs**
+
+- Puede tocar la manilla de una puerta `2 veces`, haciendo que el sonido de la misma se escuche uno encima de otro
 - Puede cerrar una puerta completamente abierta (fuera de un evento y/o hunt)
-- Al cerrar una puerta, drena la cordura del player más cercano en un `15%`
-- Si falla en cerrar la puerta, tocará la manilla 2 veces
+- Al interactuar con objetos, puertas o ghost events, drena la cordura del player en un `15%`
 - Es el único ghost que puede dejar lectura EMF en la puerta principal al cerrar una puerta
 - Utilizar un incencio en la ghost room lo dejará encerrado ahí por `60 segundos`
 
 ### Oni
+
+**EMF 5 -**
+**Freezing Temperatures -**
+**DOTs**
 
 - No puede manifestarse como una bola de aire
 - Se manifiesta más a menudo cuando hay varios player en la ghost room
@@ -324,17 +374,31 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Yokai
 
+**Orbs -**
+**Spirit Box -**
+**DOTs**
+
 - Puede iniciar una hunt con promedio de cordura bajo el `80%` si un player habla cerca de él
-- Durante una hunt, le cuesta mucho detectar el equipamiento y voz del player
+- Durante una hunt, puede detectar la voz y equipamiento del player a tan solo `2.5 metros`
 
 ### Hantu
+
+**Freezing Temperatures -**
+**Orbs -**
+**Finger Prints**
 
 - Lento en temperaturas altas, rápido en temperaturas bajas
 - Siempre mostrará Temperaturas Heladas, aún cuando la configuración de la partida no permita evidencia
 - Si los fusibles están apagados, se le puede ver su respiración durante una hunt (procurar no confundir con respiración de players)
+- Es muy lento en habitaciones con temperaturas altas cuando los fusibles están encendidos
+- Es muy rápido en habitaciones (y ghost room) heladas cuando los fusibles están apagados
 - Durante una hunt, no aumentará su velocidad de movimiento mientras observa al player
 
 ### Goryo
+
+**Finger Prints -**
+**EMF 5 -**
+**DOTs**
 
 - DOTS solo pueden ser reveladas mediante una cámara de video mientras la ghost room esté vacía
 - No puede cambiar de ghost room
@@ -342,17 +406,30 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Myling
 
+**EMF 5 -**
+**Finger Prints -**
+**Ghost Writing**
+
 - Durante una hunt es muy callado, pudiendo escucharlo hasta un rango de `12 metros`
 - Habla más seguido mediante un micrófono parabólico
 - Durante una hunt, sus pisadas y voz se detendrán apenas la linterna del player deje de parpadear
 
 ### Onryo
 
+**Spirit Box -**
+**Freezing Temperatures -**
+**Orbs**
+
+- Puede iniciar una hunt con promedio de cordura bajo el `60%`
 - No puede iniciar una hunt en un radio de `4 metros` de una vela encendida
 - Si se deja una vela encencida sobre un crucifijo, priorizará apagar la vela antes que ocupar el crucifijo
-- Al apagar por `3ra vez` una vela, comenzará una hunt ignorando el promedio de cordura (puede ser cancelada al consumir una carga de crucifijo)
+- Al apagar por 3 velas a la vez dentro de la ghost room, comenzará una hunt ignorando el promedio de cordura
 
 ### The Twins
+
+**EMF 5 -**
+**Freezing Temperatures -**
+**Spirit Box**
 
 - Solo 1 ghost caza durante una hunt
 - Durante una hunt, será más lento de lo normal o más rápido de lo normal
@@ -362,20 +439,33 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Raiju
 
-- Durante una hunt, aumentará su velocidad de movimiento cerca de aparatos electrónicos encendidos (aún cuando estén en el suelo)
+**EMF 5 -**
+**Orbs -**
+**DOTs**
+
+- Durante una hunt, aumentará su velocidad de movimiento cerca de aparatos electrónicos encendidos del player (no afecta a luces de la ubicación)
 - Interfiere los aparatos electrónicos en un radio de 15 metros durante un evento y/o hunt
 - Durante una hunt, no aumentará su velocidad de movimiento mientras observa al player
 
 ### Obake
 
+**Finger Prints -**
+**Orbs -**
+**EMF 5**
+
+- Durante una hunt, tiene `6.66%` de probabilidad de cambiar de forma cada vez que parpadea
 - Tiene un `75%` de probabilidad de dejar Ultravioleta
 - Siempre mostrará Ultravioleta, aún cuando la configuración de la partida no permita evidencia
 - Al dejar evidencia Ultravioleta, tiene `16.7%` de probabilidad de:
   - Dejar evidencia de mano con `6 dedos`
   - Dejar evidencia de interruptor con `2 dedos`
-- Durante una hunt, tiene `6.66%` de probabilidad de cambiar de forma cada vez que parpadea
 
 ### The Mimic
+
+**Spirit Box -**
+**Freezing Temperatures -**
+**Finger Prints -**
+**Orbs**
 
 - Escogerá a un ghost random e imitará su comportamiento
 - Siempre mostrará Orbes Fantasma, aún cuando la configuración de la partida no permita evidencia ni sea una de sus 3 pruebas obligatorias
@@ -383,6 +473,10 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 - Puede cambiar de ghost cada `30 segundos - 2 minutos`, pero nunca durante una hunt
 
 ### Moroi
+
+**Spirit Box -**
+**Freezing Temperatures -**
+**Ghost Writing**
 
 - Su velocidad de movimiento depende del promedio de cordura, entre menor sea, más rápido será
 - Siempre mostrará Spirit Box, aún cuando la configuración de la partida no permita evidencia
@@ -400,6 +494,10 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 ### Deogen
 
+**Spirit Box -**
+**Ghost Writing -**
+**DOTs**
+
 - Durante una hunt, SIEMPRE sabrá en donde estás, no puedes esconderte
 - Al estar lejos del player, se moverá muy rápido
 - Al estar cerca del player, se moverá extremadamente lento
@@ -409,6 +507,10 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 - Durante una hunt, no aumentará su velocidad de movimiento mientras observa al player
 
 ### Thaye
+
+**Ghost Writing -**
+**DOTs -**
+**Orbs**
 
 - Es el único ghost que avanza de edad según avanza la partida
 - Envejecerá cada `1-2 minutos` si un player está cerca de él
