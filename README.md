@@ -7,6 +7,14 @@
 - [Equipamiento Recomendado](#equipamiento-recomendado)
   - [Inicial](#inicial)
   - [Opcional](#opcional)
+- [Evidencias](#evidencias)
+  - [EMF](#emf)
+  - [Ultravioleta (Finger Prints)](#ultravioleta-finger-prints)
+  - [Escritura fantasma (Ghost Writing)](#escritura-fantasma-ghost-writing)
+  - [Temperaturas Heladas (Freezing Temperatures)](#temperaturas-heladas-freezing-temperatures)
+  - [DOTS](#dots)
+  - [Orbes Espectrales (Ghost Orbs)](#orbes-espectrales-ghost-orbs)
+  - [Spirit Box](#spirit-box)
 - [Posesiones Malditas](#posesiones-malditas)
   - [Monkey Paw](#monkey-paw)
   - [Music Box](#music-box)
@@ -81,6 +89,54 @@
 - Sound Sensor: III
 - Tripod: III
 
+# Evidencias
+
+### EMF
+
+Toda actividad y/o evento fantasma deja una medida EMF entre 1 a 5. Solo cuando el valor es `5` se considera como `evidencia`
+
+### Ultravioleta (Finger Prints)
+
+El fantasma puede dejar `marcas ultravioletas` al interactuar con los siguientes objetos:
+
+- Puertas (mano)
+- Ventanas (mano)
+- Interruptores (dedo)
+- Sal (pisada)
+
+IMPORTANTE: El `Obake` cuenta con evidencia Ultravioleta, pero al interactuar con uno de estos objetos solo tiene un `75%` de probabilidad de dejar una marca
+
+### Escritura fantasma (Ghost Writing)
+
+Al dejar el libro (no tirarlo) en una superficie, el fantasma puede escribir en sus páginas (en la ghost room)
+
+TIP: Dejar el libro lo más céntrico posible en la habitación
+
+### Temperaturas Heladas (Freezing Temperatures)
+
+Si la temperatura es menor o igual a `0` en la ghost room, se considera como evidencia
+
+### DOTS
+
+Si el fantasma decide moverse y pasa por una zona cubierta por el detector D.O.T.S, puede aparecer su figura en color verde durante unos pocos segundos
+
+### Orbes Espectrales (Ghost Orbs)
+
+Al activar la visión nocturna en una cámara de video, es posible ver pequeños orbes flotar durante unos segundos dentro de la ghost room
+
+IMPORTANTE: The Mimic `SIEMPRE` mostrará orbes, aún cuando no sea una de sus tres evidencias obligatorias, tener cuidado con no confundirse
+
+### Spirit Box
+
+Solo responderá cuando:
+
+- El player esté en la ghost room
+- Las luces de la ghost room estén apagadas
+- Se cumpla el requisito de comunicación (Responde a solas o a todos)
+  - En el caso de que el fantasma responda a `Personas que se encuentren solas`, solo un player debe estar en la ghost room en el momento de hacer las preguntas
+
+TIP: Se puede hacer cualquier tipo de pregunta, ideal spamear preguntas para intentar conseguir una respuesta
+
 # Posesiones Malditas
 
 Todas las posesiones malditas, de una u otra manera, pueden iniciar una `cursed hunt`, la cual tiene las siguientes caracteristicas:
@@ -89,6 +145,8 @@ Todas las posesiones malditas, de una u otra manera, pueden iniciar una `cursed 
 - Ignora cooldown entre hunts
 - Ignora crucifijos (excepto Tier 3)
 - Ignora velas (solo para Onryo)
+
+Además, todas (menos las Tarot Cards) consumen cordura al ser utilizadas
 
 ### Monkey Paw
 
@@ -421,9 +479,11 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **Orbs**
 
 - Puede iniciar una hunt con promedio de cordura bajo el `60%`
-- No puede iniciar una hunt en un radio de `4 metros` de una vela encendida
+- No puede iniciar una hunt en un radio de `4 metros` de una vela encendida (funciona como `Crucifijo`)
+- Las primeras `2 velas` apagadas no harán nada
+- Al apagar la `3ra vela`, iniciará una hunt
+- Las velas subsiguientes de la 3ra que se apaguen tendrán una probabilidad aleatoria de iniciar otra hunt
 - Si se deja una vela encencida sobre un crucifijo, priorizará apagar la vela antes que ocupar el crucifijo
-- Al apagar por 3 velas a la vez dentro de la ghost room, comenzará una hunt ignorando el promedio de cordura
 
 ### The Twins
 
@@ -431,9 +491,8 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **Freezing Temperatures -**
 **Spirit Box**
 
-- Solo 1 ghost caza durante una hunt
-- Durante una hunt, será más lento de lo normal o más rápido de lo normal
-- Al momento de iniciar una hunt, no necesariamente cambiarán entre el rápido y el lento
+- Solo uno de los dos ghost caza durante una hunt, se escoge de forma aleatoria
+- Uno es más lento de lo normal, el otro más rápido de lo normal
 - Pueden hacer 2 interacciones a la vez en diferentes rooms (ej: tocar una puerta y lanzar un objeto)
 - Pueden iniciar una hunt en una room diferente a la ghost room
 
