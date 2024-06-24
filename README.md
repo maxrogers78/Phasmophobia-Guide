@@ -56,9 +56,7 @@
 
 ### Inicial
 
-- D.O.T.S:
-  - II: habitaciones pequeñas/medianas
-  - III: habitaciones grandes
+- D.O.T.S: III
 - EMF Reader: III
 - Ghost Writing Book: III
 - Spirit Box: III
@@ -102,6 +100,8 @@ El fantasma puede dejar `marcas ultravioletas` al interactuar con los siguientes
 - Puertas (mano)
 - Ventanas (mano)
 - Interruptores (dedo)
+- Lámparas (dedo)
+- Controles de TV (dedo)
 - Sal (pisada)
 
 IMPORTANTE: El `Obake` cuenta con evidencia Ultravioleta, pero al interactuar con uno de estos objetos solo tiene un `75%` de probabilidad de dejar una marca
@@ -109,6 +109,8 @@ IMPORTANTE: El `Obake` cuenta con evidencia Ultravioleta, pero al interactuar co
 ### Escritura fantasma (Ghost Writing)
 
 Al dejar el libro (no tirarlo) en una superficie, el fantasma puede escribir en sus páginas (en la ghost room)
+
+Si el fantasma no cuenta con esta evidencia, puede lanzar y cerrar el libro
 
 TIP: Dejar el libro lo más céntrico posible en la habitación
 
@@ -219,6 +221,7 @@ Lista de deseos:
 - Encender cada vela drena la cordura en un `16%`, necesitando un mínimo de `80%` de cordura para encender las 5 (al menos para un player)
 - Al igual que las velas normales, el ghost puede apagarlas
 - Al encender las 5 velas, sucederá lo siguiente:
+  - El periodo de preparación terminará
   - Invocará al ghost dentro del círculo (se verá como una sombra transparente si es un Shade)
   - No podrá atacar por `5 segundos`, las excepciones a esto son:
     - Si el player que encendió la última vela tiene menos de `16%` de cordura
@@ -392,7 +395,10 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **EMF 5**
 
 - Es muy tímido, haciendo que reduzca la probabilidad de realizar un ghost event y/o interacción
-- No puede iniciar una hunt si al menos 1 player está en la ghost room
+- Si al menos 1 player está en la ghost room, no podrá:
+  - Iniciar una hunt
+  - Apagar velas y/o encendedores
+  - Escribir en Escritura Fantasma
 - Solo puede iniciar una hunt cuando el promedio de cordura es bajo a `35%`
 - Su ghost event favorito es la bola de aire
 - Al ser invocado a través del Summoning Circle se verá como una sombra negra
