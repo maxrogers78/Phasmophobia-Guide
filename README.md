@@ -24,6 +24,7 @@
   - [Haunted Mirror](#haunted-mirror)
   - [Tarot Cards](#tarot-cards)
 - [Comportamientos de Ghosts](#comportamientos-de-ghosts)
+- [Promedios de Cordura](#promedios-de-cordura)
 - [Ghosts](#ghosts)
   - [Spirit](#spirit)
   - [Wraith](#wraith)
@@ -60,9 +61,9 @@
 - EMF Reader: III
 - Ghost Writing Book: III
 - Spirit Box: III
-- Thermometer: I
+- Thermometer: III
 - UV Light:
-  - I: pisadas, puertas, interruptores
+  - II: pisadas, puertas, interruptores
   - III: ventanas
 - Video Camera: III
 - Flashlight: III
@@ -74,7 +75,7 @@
 - Headgear: III
 - Igniter: III
 - Inciense:
-  - I: despistar
+  - I: despistar (ideal para Apocalypse)
   - II: despistar, ralentizar
   - III: stunear
 - Motion Sensor: III
@@ -112,21 +113,25 @@ Al dejar el libro (no tirarlo) en una superficie, el fantasma puede escribir en 
 
 Si el fantasma no cuenta con esta evidencia, puede lanzar y cerrar el libro
 
+IMPORTANTE: Si se juega en una configuración donde se oculta 1 o más evidencias, puede lanzar el libro aún cuando una de sus 3 evidencias sea Escritura Fantasma
+
 TIP: Dejar el libro lo más céntrico posible en la habitación
 
 ### Temperaturas Heladas (Freezing Temperatures)
 
-Si la temperatura es menor o igual a `0` en la ghost room, se considera como evidencia
+Si la temperatura es menor a `1` en la ghost room, se considera como evidencia
 
 ### DOTS
 
-Si el fantasma decide moverse y pasa por una zona cubierta por el detector D.O.T.S, puede aparecer su figura en color verde durante unos pocos segundos
+Si el fantasma decide moverse y pasa por una zona cubierta por el detector DOTS, puede aparecer su figura en color verde durante unos pocos segundos
+
+IMPORTANTE: El aliento helado del player se ve visualmente afectado por los DOTS, evitar confundirse
 
 ### Orbes Espectrales (Ghost Orbs)
 
 Al activar la visión nocturna en una cámara de video, es posible ver pequeños orbes flotar durante unos segundos dentro de la ghost room
 
-IMPORTANTE: The Mimic `SIEMPRE` mostrará orbes, aún cuando no sea una de sus tres evidencias obligatorias, tener cuidado con no confundirse
+IMPORTANTE: The Mimic `SIEMPRE` mostrará orbes, aún cuando no sea una de sus tres evidencias obligatorias, evitar confundirse
 
 ### Spirit Box
 
@@ -134,18 +139,21 @@ Solo responderá cuando:
 
 - El player esté en la ghost room
 - Las luces de la ghost room estén apagadas
-- Se cumpla el requisito de comunicación (Responde a solas o a todos)
+- Se cumpla el requisito de comunicación (responde a solas o a todos)
   - En el caso de que el fantasma responda a `Personas que se encuentren solas`, solo un player debe estar en la ghost room en el momento de hacer las preguntas
 
 TIP: Se puede hacer cualquier tipo de pregunta, ideal spamear preguntas para intentar conseguir una respuesta
 
 # Posesiones Malditas
 
+Las posesiones malditas son 7 objetos que se pueden utilizar para ayudar al player a identificar la ghost room, caracteristicas del ghost, ganar y perder cordura, etc.
+
 Todas las posesiones malditas, de una u otra manera, pueden iniciar una `cursed hunt`, la cual tiene las siguientes caracteristicas:
 
 - Ignora cordura
 - Ignora cooldown entre hunts
 - Ignora crucifijos (excepto Tier 3)
+  - En el caso de Tier 3, consumirá todas sus cargas
 - Ignora velas (solo para Onryo)
 
 Además, todas (menos las Tarot Cards) consumen cordura al ser utilizadas
@@ -163,7 +171,7 @@ Lista de deseos:
 - Ghost:
   - I wish to see the ghost:
     - Forza un ghost event en la ubicación actual del ghost
-    - Afecta al player con visibilidad reducida
+    - Al terminar el ghost event, afecta al player con visibilidad reducida
     - Luego de `5 segundos` del inicio del ghost event, inicia una cursed hunt
     - Al terminar la cursed hunt, la visilibilidad del player volverá a la normalidad
   - I wish for activity / I wish the ghost would do something:
@@ -264,8 +272,7 @@ Lista de deseos:
 
 Contiene 10 cartas generadas de forma aleatoria, las cuales son:
 
-- The Tower (`20%`, actualmente buggeada, no hace nada):
-  - Forza una interacción
+- The Tower (`20%`):
   - Duplica actividad fantasma por `20 segundos`
 - The Wheel of Fortune (`20%`):
   - Fuego verde: `+25%` de cordura
@@ -306,6 +313,42 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
   - Revenant (depende de detectar al player)
   - Thaye (depende de su edad)
 
+# Promedios de Cordura
+
+Lista del promedio de cordura que cada ghost utilizará para poder iniciar una hunt, estos valores corresponden al `promedio de cordura de todos los players`
+
+- 75%
+  - Thaye
+- 70%
+  - Demon (excepto su habilidad)
+- 60%
+  - Mare (con luces apagadas)
+  - Onryo
+- 50%
+  - Spirit
+  - Wraith
+  - Phantom
+  - Poltergeist
+  - Banshee (cordura del favorito)
+  - Jinn
+  - Revenant
+  - Yurei
+  - Oni
+  - Yokai
+  - Hantu
+  - Goryo
+  - Myling
+  - The Twins
+  - Raiju
+  - Obake
+  - The Mimic (default)
+  - Moroi
+- 40%
+  - Mare (con luces encendidas)
+  - Deogen
+- 35%
+  - Shade
+
 # Ghosts
 
 ### Spirit
@@ -314,26 +357,31 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **Ghost Writing -**
 **Spirit Box**
 
-- Utilizar un incienso lo dejará sin poder iniciar una hunt durante `3 minutos`
+- Utilizar un incienso lo dejará sin poder iniciar una hunt durante `180 segundos`, ya sea en la habitación del ghost o durante una hunt
 
 ### Wraith
 
 **EMF 5 -**
 **Spirit Box -**
-**DOTs**
+**DOTS**
 
 - No deja pisadas en la sal
-- Se puede teletransportar a un player, e iniciar una hunt en ese lugar
-- Cuando se teletransporta a un player deja una lectura `EMF 2`
+- Se puede teletransportar a 3 metros de un player, generando una lectura `EMF 2`
+- Al teletransportarse, tiene un `25%` de probabilidad de dejar una lectura `EMF 5`
 
 ### Phantom
 
 **Spirit Box -**
 **Finger Prints -**
-**DOTs**
+**DOTS**
 
-- Desaparece cuando se le toma una foto
-- Puede escoger a un player y hacer roaming alrededor de el, permitiendole cambiar de ghost room
+- Al tomarle una foto, éste no aparecerá en ella y no tendrá interferencia
+- Si la foto se toma durante un ghost event, sucederá lo siguiente:
+  - El ghost desaparecerá físicamente
+  - El equipamiento electrónico volverá a funcionar bien
+  - Los player dejarán de escuchar sus latidos
+- Puede moverse hacia la ubicación de un player, activando sensores de movimientos y sal en el camino
+- Al moverse hacia un player, dejará una lectura `EMF 2`
 - Durante una hunt es poco visible (a diferencia del Oni)
 
 ### Poltergeist
@@ -342,20 +390,21 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **Finger Prints -**
 **Ghost Writing**
 
-- Puede hacer una "explosión" de items (baja mucho la cordura)
-- Lanza objetos con mayor fuerza de lo normal y más seguido
 - Durante una hunt, lanzará items cerca suyo cada `0.5 segundos`
+- Lanza objetos con mayor fuerza de lo normal y más seguido
+- Puede hacer una "explosión" de items (baja mucho la cordura)
 
 ### Banshee
 
 **Finger Prints -**
 **Orbs -**
-**DOTs**
+**DOTS**
 
 - Elige a un player "favorito", solo cazará a ese player (mientras esté en el mismo piso y dentro del edificio, de lo contrario atacará a cualquiera) ignorando a cualquier otro player
 - Iniciará hunts según la cordura del favorito
 - Si el favorito muere, escogerá a otro
-- Tiene un `30%` de probabilidad de dar un grito agudo mediante el Micrófono Parabólico
+- Tiene un `33%` de probabilidad de dar un grito agudo mediante el Micrófono Parabólico
+- Cuando aparece en `DOTS` intentará ir hacia el favorito
 - Su ghost event favorito es cantar
 
 ### Jinn
@@ -364,9 +413,9 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **EMF 5 -**
 **Freezing Temperatures**
 
-- Jamás apagará los fusibles
+- Jamás apagará los fusibles (aún puede encender un interrumptor, llegando a causar que los fusibles se apaguen)
 - Durante una hunt, avanzará muy rápidamente apenas te vea desde lejos (solo con los fusibles encendidos), una vez se acerque a ti continuará con su velocidad normal
-- Dejará una lectura de `EMF 2` en los fusibles al intentar apagarlos
+- Al estar cerca de un player (con los fusibles encendidos) puede bajar la cordura de todos los player en la habitación actual (o en un radio de 3 metros) en un `25%`
 
 ### Mare
 
@@ -374,8 +423,9 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **Orbs -**
 **Ghost Writing**
 
-- Puede apagar un interruptor de luz INMEDIATAMENTE después de que el jugador lo encienda (aún cuando los fusibles están apagados)
-- Jamás podrá encender un interruptor de luz
+- Puede apagar un interruptor de luz INMEDIATAMENTE después de que el jugador lo intente encender siempre y cuando se encuentre en un radio de 4 metros del Mare, la probabilidad de que esto suceda es muy baja
+- Jamás podrá encender un interruptor de luz, pero si puede encender los fusibles
+- Preferirá moverse a habitaciones oscuras si la suya se encuentra con la luz encendida
 - Puede iniciar una hunt cuando el promedio de cordura en menor a `60%` si están a oscuras y `40%` si están en luz
 - Su ghost event favorito es romper ampolletas
 
@@ -409,7 +459,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **Ghost Writing -**
 **Freezing Temperatures**
 
-- Puede iniciar una hunt con promedio de cordura bajo el `100%`, pero tiene una probabilidad muy baja de atacar
+- Puede iniciar una hunt cuando el promedio de cordura es bajo a `75%`, además de esto, cuenta con una habilidad que le permite iniciar una hunt ignorando el nivel de cordura, permitiendo iniciar una hunt apenas el player entre al edificio
 - Su delay entre hunts es de `20 segundos`
 - El radio de uso del crucifijo aumenta en un `50%`
 - Utilizar un incienso en la ghost room lo dejará sin poder iniciar una hunt por solo `60 segundos`
@@ -418,29 +468,29 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 **Ghost Orbs -**
 **Freezing Temperatures -**
-**DOTs**
+**DOTS**
 
 - Puede tocar la manilla de una puerta `2 veces`, haciendo que el sonido de la misma se escuche uno encima de otro
 - Puede cerrar una puerta completamente abierta (fuera de un evento y/o hunt)
 - Al interactuar con objetos, puertas o ghost events, drena la cordura del player en un `15%`
-- Es el único ghost que puede dejar lectura EMF en la puerta principal al cerrar una puerta
-- Utilizar un incencio en la ghost room lo dejará encerrado ahí por `60 segundos`
+- Utilizar un incencio en la ghost room lo dejará encerrado ahí por `90 segundos`, si durante este tiempo realiza un ghost event en otra habitación, comenzará a devolverse a la ghost room apenas termine el ghost event
 
 ### Oni
 
 **EMF 5 -**
 **Freezing Temperatures -**
-**DOTs**
+**DOTS**
 
 - No puede manifestarse como una bola de aire
-- Se manifiesta más a menudo cuando hay varios player en la ghost room
+- Se manifiesta más a menudo cuando hay varios player cerca de él
+- Drena el doble de cordura en un ghost event
 - Durante una hunt es muy visible (a diferencia del Phantom)
 
 ### Yokai
 
 **Orbs -**
 **Spirit Box -**
-**DOTs**
+**DOTS**
 
 - Puede iniciar una hunt con promedio de cordura bajo el `80%` si un player habla cerca de él
 - Durante una hunt, puede detectar la voz y equipamiento del player a tan solo `2.5 metros`
@@ -452,21 +502,20 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **Finger Prints**
 
 - Lento en temperaturas altas, rápido en temperaturas bajas
-- Siempre mostrará Temperaturas Heladas, aún cuando la configuración de la partida no permita evidencia
+- Siempre mostrará Temperaturas Heladas aún si la configuración de la partida permite solo 1 evidencia
 - Si los fusibles están apagados, se le puede ver su respiración durante una hunt (procurar no confundir con respiración de players)
-- Es muy lento en habitaciones con temperaturas altas cuando los fusibles están encendidos
-- Es muy rápido en habitaciones (y ghost room) heladas cuando los fusibles están apagados
+- Jamás podrá encender los fusibles, y tiene el doble de probabilidad de apagarlos
 - Durante una hunt, no aumentará su velocidad de movimiento mientras observa al player
 
 ### Goryo
 
 **Finger Prints -**
 **EMF 5 -**
-**DOTs**
+**DOTS**
 
 - DOTS solo pueden ser reveladas mediante una cámara de video mientras la ghost room esté vacía
 - No puede cambiar de ghost room
-- Siempre mostrará DOTS, aún cuando la configuración de la partida no permita evidencia
+- Siempre mostrará DOTS aún si la configuración de la partida permite solo 1 evidencia
 
 ### Myling
 
@@ -497,16 +546,15 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **Freezing Temperatures -**
 **Spirit Box**
 
+- Uno es `10%` más lento de lo normal, el otro `10%` más rápido de lo normal
 - Solo uno de los dos ghost caza durante una hunt, se escoge de forma aleatoria
-- Uno es más lento de lo normal, el otro más rápido de lo normal
 - Pueden hacer 2 interacciones a la vez en diferentes rooms (ej: tocar una puerta y lanzar un objeto)
-- Pueden iniciar una hunt en una room diferente a la ghost room
 
 ### Raiju
 
 **EMF 5 -**
 **Orbs -**
-**DOTs**
+**DOTS**
 
 - Durante una hunt, aumentará su velocidad de movimiento cerca de aparatos electrónicos encendidos del player (no afecta a luces de la ubicación)
 - Interfiere los aparatos electrónicos en un radio de 15 metros durante un evento y/o hunt
@@ -518,12 +566,11 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **Orbs -**
 **EMF 5**
 
-- Durante una hunt, tiene `6.66%` de probabilidad de cambiar de forma cada vez que parpadea
-- Tiene un `75%` de probabilidad de dejar Ultravioleta
-- Siempre mostrará Ultravioleta, aún cuando la configuración de la partida no permita evidencia
-- Al dejar evidencia Ultravioleta, tiene `16.7%` de probabilidad de:
-  - Dejar evidencia de mano con `6 dedos`
-  - Dejar evidencia de interruptor con `2 dedos`
+- Durante una hunt, tiene `6.66%` de probabilidad de cambiar de forma cada vez que parpadea (pasará al menos 1 vez en cada hunt)
+- Tiene solo un `75%` de probabilidad de dejar Ultravioleta al interactuar en una superficie donde pueda mostrar huellas
+- Al dejar evidencia Ultravioleta, tiene `16.7%` de probabilidad de dejar un dedo extra (no afecta a pisadas)
+- Siempre mostrará Ultravioleta aún si la configuración de la partida permite solo 1 evidencia
+- Existe la probabilidad de que las marcas Ultravioleta que deje desaparezcan más rápido
 
 ### The Mimic
 
@@ -544,7 +591,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 **Ghost Writing**
 
 - Su velocidad de movimiento depende del promedio de cordura, entre menor sea, más rápido será
-- Siempre mostrará Spirit Box, aún cuando la configuración de la partida no permita evidencia
+- Siempre mostrará Spirit Box aún si la configuración de la partida permite solo 1 evidencia
 - Si responde a un player mediante la Spirit Box y/o Micrófono Parabólico lo maldecirá
 - Un player maldito tendrá las siguientes caracteristicas:
   - Su cordura bajará el doble de rápido
@@ -561,7 +608,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 
 **Spirit Box -**
 **Ghost Writing -**
-**DOTs**
+**DOTS**
 
 - Durante una hunt, SIEMPRE sabrá en donde estás, no puedes esconderte
 - Al estar lejos del player, se moverá muy rápido
@@ -574,7 +621,7 @@ Estos datos son por defecto, hay varios ghosts que cambian valores de este compo
 ### Thaye
 
 **Ghost Writing -**
-**DOTs -**
+**DOTS -**
 **Orbs**
 
 - Es el único ghost que avanza de edad según avanza la partida
